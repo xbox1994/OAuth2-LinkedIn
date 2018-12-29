@@ -6,7 +6,6 @@ import (
 )
 
 func init() {
-    beego.Router("/auth/linkedin", &controllers.AuthorizationController{})
-    beego.Router("/auth/linkedin/callback", &controllers.CallbackController{})
-    beego.Router("/auth/linkedin/share", &controllers.ShareController{})
+    beego.Router("/linkedin/auth/authorization", &controllers.AuthorizationController{})
+    beego.Router("/linkedin/auth/callback", &controllers.CallbackController{})
 }
